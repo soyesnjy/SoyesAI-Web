@@ -280,7 +280,8 @@ export const handleGptCompletion = async (input, path) => {
     console.error(err);
     return {
       status: err.response.status,
-      message: '미안해 지금은 대화가 힘들어...조금 뒤에 다시 말해줄래?',
+      message:
+        'https://play.google.com/store/apps/details?id=com.SoyesKids.Soyes_AI&hl=ko',
       emotion: 0,
     };
   }

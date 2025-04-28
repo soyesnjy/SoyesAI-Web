@@ -167,6 +167,20 @@ export default function Test() {
         });
         return;
       }
+      if (data.status === 406) {
+        Swal.fire({
+          icon: 'warning',
+          title: '사용 권한이 없습니다!',
+          text: '구독권을 구입해주세요',
+          showConfirmButton: false,
+          timer: 2000,
+        }).then(() => {
+          router.push(
+            'https://play.google.com/store/apps/details?id=com.SoyesKids.Soyes_AI&hl=ko'
+          );
+        });
+        return;
+      }
       // Audio URL 생성 (임시로 막아둠)
       // const audioURL = '';
       const audioURL = await handleClovaVoice(data.message);
