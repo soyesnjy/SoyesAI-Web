@@ -265,7 +265,7 @@ export const handleGptCompletion = async (input, path) => {
   try {
     const response = await axios.post(
       `${process.env.NEXT_PUBLIC_URL}${path}`,
-      { EBTData: input },
+      { data: input },
       {
         headers: {
           'Content-Type': 'application/json',

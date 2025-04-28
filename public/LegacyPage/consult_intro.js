@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import styled, { keyframes } from 'styled-components';
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import AvartarListCard from '@/component/Intro_Consult_Component/AvartarListCard';
 

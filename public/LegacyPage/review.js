@@ -1,12 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import styled, { keyframes } from 'styled-components';
-import { FlexContainer } from '../styled-component/common';
+import { FlexContainer } from '../../styled-component/common';
 
 import { useEffect, useState, useCallback } from 'react';
 
 // 아바타 관련 전역 변수
 import { useRecoilState } from 'recoil';
-import { log } from '../store/state';
+import { log } from '../../store/state';
 
 import Review from '@/component/Review_Component/Review';
 import LoadingAnimation from '@/component/Chat_Component/LoadingAnimation';

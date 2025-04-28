@@ -4,7 +4,6 @@ import { FlexContainer } from '../styled-component/common';
 import { useEffect, useState } from 'react';
 
 import VideoModal from '@/component/Chat_Component/VideoModal';
-import Image from 'next/image';
 
 // 아바타 관련 전역 변수
 import { useRecoilState } from 'recoil';
