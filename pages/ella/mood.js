@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import styled, { keyframes } from 'styled-components';
-import { FlexContainer } from '@/styled-component/common';
+import styled from 'styled-components';
+// import { FlexContainer } from '@/styled-component/common';
 import { useEffect, useState, useRef } from 'react';
 
 // API 호출 메서드
@@ -23,7 +23,7 @@ import { log } from '../../store/state';
 // import { motion } from 'framer-motion';
 import { ellaMood_Round_Array } from '@/store/ellaGenerator';
 
-import { useTranslation } from 'next-i18next';
+// import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 // Renewel Test 페이지
