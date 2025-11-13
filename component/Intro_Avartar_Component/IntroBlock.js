@@ -31,6 +31,16 @@ const avatarBtnInfo = {
     color: 'black',
     title: '북극이와 일기쓰러 가기',
   },
+  maru: {
+    backColor: '#FF9900',
+    color: 'black',
+    title: '서비스 업데이트 중입니다.',
+  },
+  nella: {
+    backColor: '#A0B5FF',
+    color: 'black',
+    title: '서비스 업데이트 중입니다.',
+  },
   default: {
     backColor: '#ffd700',
     color: 'black',

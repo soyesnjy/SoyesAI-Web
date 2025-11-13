@@ -43,6 +43,20 @@ const avatarMap = {
     logoBackImgUrl: '/src/Intro_IMG/Intro_Logo/Intro_North_Logo_Back_IMG.png',
     backgroundImgUrl: '/src/NorthDiary_IMG/background.png',
   },
+  maru: {
+    name: '마루',
+    codeName: 'maru',
+    iconImgUrl: '/src/Intro_IMG/Intro_Logo/Intro_Maru_Logo_Main_IMG.png',
+    logoBackImgUrl: '/src/Intro_IMG/Intro_Logo/Intro_Maru_Logo_Back_IMG.png',
+    backgroundImgUrl: '/src/Intro_IMG/Intro_Logo/background_maru.png',
+  },
+  nella: {
+    name: '넬라',
+    codeName: 'nella',
+    iconImgUrl: '/src/Intro_IMG/Intro_Logo/Intro_Nella_Logo_Main_IMG.png',
+    logoBackImgUrl: '/src/Intro_IMG/Intro_Logo/Intro_Nella_Logo_Back_IMG.png',
+    backgroundImgUrl: '/src/Intro_IMG/Intro_Logo/background_nella.png',
+  },
   default: {
     name: '소예',
     codeName: 'soyes',
@@ -54,10 +68,11 @@ const avatarMap = {
 
 export default function Avartar_Intro() {
   const [avartaAI] = useRecoilState(avarta);
+  const avatarData = avatarMap[avartaAI] || avatarMap.default;
 
   return (
-    <IntroContainer backgroundImgUrl={avatarMap[avartaAI].backgroundImgUrl}>
-      <IntroBlock avartar={avatarMap[avartaAI]} />
+    <IntroContainer backgroundImgUrl={avatarData.backgroundImgUrl}>
+      <IntroBlock avartar={avatarData} />
     </IntroContainer>
   );
 }

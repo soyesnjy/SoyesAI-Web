@@ -41,6 +41,20 @@ const avatarArr = [
     title: '북극이',
     subtitle: '이야기 친구',
   },
+  {
+    name: 'maru',
+    imgUrl: '/src/AvatarCard_IMG/Main/AvatarCard_Main_Maru_Charc_IMG.png',
+    backColor: '#749B67',
+    title: '마루',
+    subtitle: '게임하기',
+  },
+  {
+    name: 'nella',
+    imgUrl: '/src/AvatarCard_IMG/Main/AvatarCard_Main_Nella_Charc_IMG.png',
+    backColor: '#A8A191',
+    title: '넬라',
+    subtitle: '부모님 상담',
+  },
 ];
 
 const AvartarCard = () => {

@@ -29,8 +29,18 @@ const AvartarListCard = ({
     setAvartaAI(codeName);
     localStorage.setItem('avarta', codeName);
   };
+  const getLink = (codeName, name) => {
+    if (codeName === 'ella' || name === '엘라') {
+      return '/ella/mood';
+    }
+    if (codeName) {
+      return `/${codeName}`;
+    }
+    return '/pupu';
+  };
+
   return (
-    <StyledLink href={name === '엘라' ? '/ella/mood' : '/pupu'}>
+    <StyledLink href={getLink(codeName, name)}>
       <Container
         backColor={backColor}
         borderColor={borderColor}
