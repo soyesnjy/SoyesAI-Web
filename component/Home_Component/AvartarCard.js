@@ -95,7 +95,12 @@ const AvartarCardContainer = styled.div`
   width: 100%;
   position: relative;
   display: flex;
-  justify-content: space-between;
+
+  /* key point */
+  gap: 1rem; // 카드 사이 간격
+
+  flex-wrap: wrap;
+
   padding: 0 1rem;
 
   @media (max-width: 768px) {
