@@ -93,19 +93,17 @@ const AvartarCard = () => {
 const AvartarCardContainer = styled.div`
   max-width: 80vw;
   width: 100%;
-  position: relative;
   display: flex;
-
-  /* key point */
-  gap: 1rem; // 카드 사이 간격
-
   flex-wrap: wrap;
-
+  gap: 1.2rem;
+  justify-content: flex-start;
   padding: 0 1rem;
 
   @media (max-width: 768px) {
     gap: 0.3rem;
     max-width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
